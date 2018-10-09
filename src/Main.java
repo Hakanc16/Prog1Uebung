@@ -20,22 +20,22 @@ public class Main {
         //kann nicht gelöst werden, weil wir die Dateien nicht dazu haben.
     }
 
-    public static void blatt2Aufgabe1() {
+    public static void blatt2Aufgabe1 () {
+        boolean x;
+        boolean y;
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Geben Sie 2 Zahlen ein");
-        boolean x, y;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Geben Sie für X einen Wert ein");
-        x = in.nextBoolean();
+        System.out.println("x");
+        x = sc.nextBoolean();
 
-        System.out.println("Geben Sie für Y einen Wert ein");
-        y = in.nextBoolean();
+        System.out.println("y");
+        y = sc.nextBoolean();
 
-        if (x == y) {
-            System.out.println("False");
+        if (x && y) {
+            System.out.println("false");
         } else {
-            System.out.println("True");
+            System.out.println("true");
         }
     }
 
