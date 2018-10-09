@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World");
-        blatt2Aufgabe1();
+        blatt2Aufgabe2();
     }
 
     public static void blatt1Aufgabe1() {
@@ -36,6 +36,28 @@ public class Main {
             System.out.println("False");
         } else {
             System.out.println("True");
+        }
+    }
+
+    public static void blatt2Aufgabe2() {
+
+        Scanner in = new Scanner(System.in);
+        int x,y;
+
+        System.out.println("Geben Sie eine Zahl für X ein:");
+        x = in.nextInt();
+
+        System.out.println("Geben Sie ein Zahl für Y ein:");
+        y = in.nextInt();
+
+        if((x > 0) || (y > 0)) {
+        } if(x > y) {
+            System.out.println(x);
+        } else {
+            System.out.println(y);
+        }
+        if ((x & y) < 0) {
+            System.out.println(0);
         }
     }
 }
