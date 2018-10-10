@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        blatt2Aufgabe3();
+        blatt3Aufgabe1();
     }
 
     public static void blatt1Aufgabe1() {
@@ -83,7 +83,26 @@ public class Main {
 
         System.out.println("Hier sind deine ersten " + n + " positiven geraden Zahlen rückwärts:");
         for (int i = n; i > 0; i--) {
-            System.out.println(i*2);
+            System.out.println(i * 2);
         }
     }
+
+    public static void blatt2Aufgabe4() {
+        //Kann nicht gelöst werden
+    }
+
+    public static void blatt3Aufgabe1() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bitte String eingeben:");
+        String s = scanner.nextLine();
+        char[] vowels = {'A', 'E', 'I', 'O', 'U'};
+
+        for (char i : vowels) { //ForEach-Schleife hier sagt man das er über jedes Array in dem String iterieren soll bzw. durchgehen
+            s = s.replace(String.valueOf(i), "");
+        }
+        System.out.println(s);
+    }
 }
+
+
+
