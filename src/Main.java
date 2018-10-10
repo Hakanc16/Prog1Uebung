@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        blatt3Aufgabe1();
+        blatt3Aufgabe2();
     }
 
     public static void blatt1Aufgabe1() {
@@ -92,15 +92,33 @@ public class Main {
     }
 
     public static void blatt3Aufgabe1() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Bitte String eingeben:");
-        String s = scanner.nextLine();
+        String s = in.nextLine();
         char[] vowels = {'A', 'E', 'I', 'O', 'U'};
 
         for (char i : vowels) { //ForEach-Schleife hier sagt man das er über jedes Array in dem String iterieren soll bzw. durchgehen
             s = s.replace(String.valueOf(i), "");
         }
         System.out.println(s);
+    }
+
+    public static void blatt3Aufgabe2() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Geben Sie einen String ein:");
+        String wort = in.nextLine();
+        String neu = "";
+
+        wort = wort.toUpperCase();
+
+        for (int i = wort.length() - 1; i >= 0; i--) {
+            neu = neu + wort.charAt(i);
+        }
+        if (wort.equals(neu)) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
     }
 }
 
