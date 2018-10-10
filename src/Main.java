@@ -62,6 +62,7 @@ public class Main {
     }
 
     public static void blatt2Aufgabe3() {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Geben Sie eine Zahl für n ein:");
         int n = in.nextInt();
@@ -92,6 +93,7 @@ public class Main {
     }
 
     public static void blatt3Aufgabe1() {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Bitte String eingeben:");
         String s = in.nextLine();
@@ -104,6 +106,7 @@ public class Main {
     }
 
     public static void blatt3Aufgabe2() {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Geben Sie einen String ein:");
         String wort = in.nextLine();
@@ -111,7 +114,7 @@ public class Main {
 
         wort = wort.toUpperCase();
 
-        for (int i = wort.length() - 1; i >= 0; i--) {
+        for (int i = wort.length()-1; i >= 0; i--) {
             neu = neu + wort.charAt(i);
         }
         if (wort.equals(neu)) {
